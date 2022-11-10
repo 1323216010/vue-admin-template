@@ -75,7 +75,7 @@ export default {
 
     submitUpload() {
       this.$refs.upload.submit();
-      this.refresh()
+      this.refresh();
     },
     handleRemove(file, fileList) {
       console.log(file, fileList);
