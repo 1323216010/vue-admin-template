@@ -7,7 +7,6 @@
         <div>
           {{file.name}}
           <el-button  size="small" type="primary"  @click=fileReview(file.url) >预览</el-button>
-          <el-button  size="small" type="primary"  @click=fileReview2(file.name) >预览2</el-button>
         </div>
 
       </li>
@@ -74,14 +73,9 @@ export default {
       window.open('http://127.0.0.1:8012/onlinePreview?url=' + url);
     },
 
-    fileReview2(name) {
-      var url = 'http://127.0.0.1:8080/file/' + name;
-      console.log(url)
-      console.log(encodeURIComponent(encode(url)))
-      window.open('http://127.0.0.1:8012/onlinePreview?url=' + encodeURIComponent(encode(url)));
-    },
     submitUpload() {
       this.$refs.upload.submit();
+      this.refresh()
     },
     handleRemove(file, fileList) {
       console.log(file, fileList);
