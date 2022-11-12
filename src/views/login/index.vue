@@ -1,10 +1,10 @@
 <template>
   <div class="login-container">
-    <password v-if="truth">
-      <el-button size="small" @click="getTruth">切换登录方式</el-button>
+    <password v-if="!truth">
+      <el-button size="small" @click="getTruth" >切换登录方式</el-button>
     </password>
-    <Email v-if="!truth">
-      <el-button size="small" @click="getTruth">切换登录方式</el-button>
+    <Email v-if="truth">
+      <el-button size="small" @click="getTruth" >切换登录方式</el-button>
     </Email>
    
   </div>
