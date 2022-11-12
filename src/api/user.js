@@ -8,6 +8,14 @@ export function login(data) {
   })
 }
 
+export function sendMsg(data) {
+  return request({
+    url: '/admin/vod/user/sendMsg',
+    method: 'post',
+    data
+  })
+}
+
 export function getInfo(token) {
   return request({
     url: '/admin/vod/user/info',
