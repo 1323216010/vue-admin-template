@@ -23,9 +23,13 @@
           type="text"
           tabindex="1"
           auto-complete="on"
-          style="width: 68%"
+          class="box01"
+          style="width: 50%;"
         />
-        <el-button size="small" @click="sendMsg" round>发送验证码</el-button>
+        <span style="float: right;padding-top: 6px;padding-right: 10px;">
+            <el-button size="small" @click="sendMsg" round class="box02" >发送验证码</el-button>
+        </span>
+        
       </el-form-item>
 
       <el-form-item prop="password">
@@ -48,7 +52,7 @@
       <el-button
         :loading="loading"
         type="primary"
-        style="width: 100%; margin-bottom: 30px"
+        style="width: 100%; margin-bottom: 20px"
         @click.native.prevent="handleLogin"
         >登录
       </el-button>
@@ -160,15 +164,7 @@ $cursor: #fff;
     box-sizing: border-box;
   }
 
-  .box00 {
-      float: right;
-      width: 80%;
-  }
 
-  .box01 {
-      float: right;
-      width: 20%;
-  }
 
   .box1 {
     font-size: 14px;

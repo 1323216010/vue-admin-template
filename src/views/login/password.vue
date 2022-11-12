@@ -26,7 +26,7 @@
                 </span>
             </el-form-item>
 
-            <el-button :loading="loading" type="primary" style="width: 100%; margin-bottom: 30px"
+            <el-button :loading="loading" type="primary" style="width: 100%; margin-bottom: 20px"
                 @click.native.prevent="handleLogin">登录</el-button>
 
             <div class="clearfix">

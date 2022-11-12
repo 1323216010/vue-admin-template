@@ -1,8 +1,9 @@
   // 定义一些公共的属性和方法
-  const fileUpload = "http://127.0.0.1:8012/fileUpload";
-  const onlinePreview = 'http://127.0.0.1:8012/onlinePreview?url=';
-  const downloadFile = 'http://127.0.0.1:8012/demo/'
-  const deleteFile = 'http://127.0.0.1:8012/deleteFile';
+  const kkIp = 'http://127.0.0.1:8012'
+  const fileUpload = kkIp + '/fileUpload';
+  const onlinePreview = kkIp + '/onlinePreview?url=';
+  const downloadFile = kkIp + '/demo/'
+  const deleteFile = kkIp + '/deleteFile';
    // 暴露出这些属性
   export default {
     fileUpload,
