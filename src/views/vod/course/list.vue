@@ -72,7 +72,7 @@
           <img :src="scope.row.cover" alt="scope.row.title" width="100%">
         </template>
       </el-table-column>
-      <el-table-column label="课程信息">
+      <el-table-column label="文件信息">
         <template slot-scope="scope">
           <a href="">{{ scope.row.title }}</a>
           <p>
@@ -85,12 +85,12 @@
           </p>
         </template>
       </el-table-column>
-      <el-table-column label="讲师" width="100" align="center">
+      <el-table-column label="所属用户" width="100" align="center">
         <template slot-scope="scope">
           {{ scope.row.param.teacherName }}
         </template>
       </el-table-column>
-      <el-table-column label="价格(元)" width="100" align="center" >
+      <el-table-column label="评分" width="100" align="center" >
         <template slot-scope="scope">
           <!-- {{ typeof '0' }}  {{ typeof 0 }} {{ '0' == 0 }} -->
           <!-- {{ typeof scope.row.price }}
@@ -106,12 +106,12 @@
           <el-tag v-else>{{ scope.row.price }}</el-tag>
         </template>
       </el-table-column>
-      <el-table-column prop="status" label="课程状态" width="100" align="center" >
+      <!-- <el-table-column prop="status" label="课程状态" width="100" align="center" >
         <template slot-scope="scope">
           <el-tag :type="scope.row.status === 0 ? 'warning' : 'success'">{{ scope.row.status === 0 ? '未发布' : '已发布' }}</el-tag>
         </template>
-      </el-table-column>
-      <el-table-column label="发布时间" width="140" align="center">
+      </el-table-column> -->
+      <el-table-column label="上传时间" width="140" align="center">
         <template slot-scope="scope">
           {{ scope.row.createTime ? scope.row.createTime.substr(0, 16) : '' }}
         </template>
