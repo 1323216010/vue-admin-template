@@ -4,6 +4,10 @@
   
     <breadcrumb class="breadcrumb-container" />
 
+    <span style="margin-left: 10px;">{{ YYYYMMDD }}</span>
+    <span style="margin-left: 10px;">{{ HHMMSS }}</span>
+
+
     <div class="right-menu">
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
@@ -15,17 +19,17 @@
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
           <router-link to="/">
             <el-dropdown-item>
-              Home
+              主页
             </el-dropdown-item>
           </router-link>
           <a target="_blank" href="https://github.com/PanJiaChen/vue-admin-template/">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
           <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">
-            <el-dropdown-item>Docs</el-dropdown-item>
+            <el-dropdown-item>文档</el-dropdown-item>
           </a>
           <el-dropdown-item divided @click.native="logout">
-            <span style="display:block;">Log Out</span>
+            <span style="display:block;">退出登录</span>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -37,12 +41,21 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
+import moment from 'moment'
 
 export default {
   components: {
     Breadcrumb,
     Hamburger
   },
+
+  data () {
+    return {
+      HHMMSS: moment().format('HH:mm:ss'),
+      YYYYMMDD: moment().format('YYYY/MM/DD'),
+    }
+  },
+
   computed: {
     ...mapGetters([
       'sidebar',
@@ -141,5 +154,29 @@ export default {
       }
     }
   }
+
+  // .right {
+  //   margin-right: 40px;
+
+  //   .infoUl {
+  //     display: flex;
+  //     align-items: center;
+  //     font-size: 16px;
+  //     color: #666;
+
+  //     &>li {
+  //       margin-left: 20px;
+  //     }
+
+  //     .logout {
+  //       padding: 8px 27px;
+  //       background: #508A7D;
+  //       border-radius: 5px;
+  //       color: #fff;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+
 }
 </style>
