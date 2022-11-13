@@ -4,9 +4,14 @@
     <el-card class="operate-container" shadow="never">
     <el-form :inline="true" class="demo-form-inline">
 
+      <!-- 标题 -->
+      <el-form-item label="文件名">
+        <el-input v-model="searchObj.title" placeholder="文件名"/>
+      </el-form-item>
+
       <!-- 所属分类：级联下拉列表 -->
       <!-- 一级分类 -->
-      <el-form-item label="课程类别">
+      <el-form-item label="文件类别">
         <el-select
           v-model="searchObj.subjectParentId"
           placeholder="请选择"
@@ -28,10 +33,7 @@
         </el-select>
       </el-form-item>
 
-      <!-- 标题 -->
-      <el-form-item label="标题">
-        <el-input v-model="searchObj.title" placeholder="课程标题"/>
-      </el-form-item>
+
       <!-- 讲师 -->
       <el-form-item label="讲师">
         <el-select
