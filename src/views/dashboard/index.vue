@@ -52,6 +52,7 @@ export default {
   },
   created() {
     this.fileUpload = variables.fileUpload
+    // this.fileUpload = 'http://localhost:8333/admin/vod/file/fileUpload'
     this.refresh()
   },
   methods: {
