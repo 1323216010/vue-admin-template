@@ -11,7 +11,7 @@
 
       <!-- 所属分类：级联下拉列表 -->
       <!-- 一级分类 -->
-      <el-form-item label="文件类别">
+      <el-form-item label="文件格式">
         <el-select
           v-model="searchObj.subjectParentId"
           placeholder="请选择"
