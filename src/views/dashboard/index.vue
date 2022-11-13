@@ -1,6 +1,7 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-text">{{ name }}</div>
+
     <ul>
       <li v-for="file in list" :key="file.id">
       
@@ -37,6 +38,8 @@ export default {
   name: 'Dashboard',
   data() {
     return {
+      start: '',
+      final: "233",
       fileUpload : '',
       list: [],
       fileList: [{ name: '样例.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100' }]
