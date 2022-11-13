@@ -1,15 +1,16 @@
 <template>
   <div class="navbar">
+
     <hamburger :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
   
     <breadcrumb class="breadcrumb-container" />
 
-    <span style="margin-left: 10px;">{{ YYYYMMDD }}</span>
-    <span style="margin-left: 10px;">{{ HHMMSS }}</span>
-
-
     <div class="right-menu">
+      <span style="margin-right: 20px;">{{ YYYYMMDD }}</span>
+      <span style="margin-right: 30px;">{{ HHMMSS }}</span>
+
       <el-dropdown class="avatar-container" trigger="click">
+
         <div class="avatar-wrapper">
           <!-- <img src="http://111.230.194.21:8012/demo/WPS%E5%9B%BE%E7%89%87-%E4%BF%AE%E6%94%B9%E5%B0%BA%E5%AF%B8.png" width="200" height="200" /> -->
           <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
