@@ -35,10 +35,10 @@
 
 
       <!-- 讲师 -->
-      <el-form-item label="讲师">
+      <el-form-item label="分类">
         <el-select
           v-model="searchObj.teacherId"
-          placeholder="请选择讲师">
+          placeholder="请选择分类">
           <el-option
             v-for="teacher in teacherList"
             :key="teacher.id"
@@ -55,7 +55,7 @@
     <!-- 工具按钮 -->
     <el-card class="operate-container" shadow="never">
       <i class="el-icon-tickets" style="margin-top: 5px"></i>
-      <span style="margin-top: 5px">数据列表</span>
+      <span style="margin-top: 5px">文件列表</span>
       <el-button class="btn-add" @click="add()">添加</el-button>
     </el-card>
 
