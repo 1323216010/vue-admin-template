@@ -1,13 +1,15 @@
 <template>
   <div class="navbar">
     <hamburger :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
-
+  
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
-          <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
+          <!-- <img src="http://111.230.194.21:8012/demo/WPS%E5%9B%BE%E7%89%87-%E4%BF%AE%E6%94%B9%E5%B0%BA%E5%AF%B8.png" width="200" height="200" /> -->
+          <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
+          <img src="http://111.230.194.21:8012/demo/WPS%E5%9B%BE%E7%89%87-%E4%BF%AE%E6%94%B9%E5%B0%BA%E5%AF%B8.png" class="user-avatar">
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
@@ -47,6 +49,10 @@ export default {
       'avatar'
     ])
   },
+  // mounted() {
+  //   console.log(avatar)
+  //   console.log(avatar+'?imageView2/1/w/80/h/80')
+  // },
   methods: {
     toggleSideBar() {
       this.$store.dispatch('app/toggleSideBar')
