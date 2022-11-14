@@ -1,20 +1,7 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">{{ name }}</div>
+    <div class="dashboard-text">文件上传预览</div>
 
-    <ul>
-      <li v-for="file in list" :key="file.id">
-      
-        <div>
-          {{file.name}}
-          <el-button  size="small" type="primary"  @click=fileReview(file.url) >预览</el-button>
-          <el-button  size="small" type="primary"  @click=download(file.name) >下载</el-button>
-          <el-button  size="small" type="primary"  @click=deletByName(file.name) >删除</el-button>
-        </div>
-
-      </li>
-      
-    </ul>
 
 
     <el-upload class="upload-demo" ref="upload" :action=fileUpload :on-preview="handlePreview"
@@ -23,6 +10,30 @@
       <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
       <div slot="tip" class="el-upload__tip">能上传任意格式文件，最好不超过500M</div>
     </el-upload>
+
+    <div style="flex: 1;">
+      <el-table  :data="list" >
+        <el-table-column label="文件名" prop="name">
+
+          <template slot-scope="scope">
+            <el-button  size="mini" type="text" @click="fileReview(scope.row.url)">{{ scope.row.name }}</el-button>
+          </template>
+
+        </el-table-column>
+        <el-table-column label="文件类型" prop="type" />
+        <el-table-column  label="操作" prop="type">
+          
+          <template slot-scope="scope">
+            <el-button  size="mini" type="text" @click="download(scope.row.name)">下载</el-button>
+          </template>
+
+
+        </el-table-column>
+      </el-table>
+    </div>
+
+
+
   </div>
   
 
@@ -42,7 +53,7 @@ export default {
       final: "233",
       fileUpload : '',
       list: [],
-      fileList: [{ name: '样例.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100' }]
+      fileList: []
     };
   },
   computed: {
@@ -56,19 +67,15 @@ export default {
     this.refresh()
   },
   methods: {
+
     refresh() {
-      console.log('refresh')
       queryByLimit(0, 100).then(res => {
         this.list = res;
       })
-
-      // axios.get('http://localhost:8333/files/21').then( res => {
-      //   console.log(res.data.name);
-      // })
     },
+
     fileReview(url) {
       window.open(variables.onlinePreview + url);
-    
     },
 
     download(name) {
