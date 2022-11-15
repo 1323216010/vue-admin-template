@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
 
+
     <div style="flex: 1;">
       <el-table  :data="list" >
         <el-table-column label="文件名" prop="name">
@@ -18,6 +19,9 @@
           </template>
 
         </el-table-column>
+
+        <el-table-column label="文件大小" prop="volume" />
+
       </el-table>
     </div>
 

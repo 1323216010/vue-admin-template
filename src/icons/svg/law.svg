@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167" height="167" viewBox="0 0 167 167">
+  <defs>
+    <style>
+      .cls-1 {
+        mix-blend-mode: color;
+      }
+
+      .cls-2 {
+        opacity: 0.55;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-linecap: square;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: #4fb192;
+        stroke: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        stroke: url(#linear-gradient-4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="71.5" y1="97" x2="71.5" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.444" stop-color="#e9ffff"/>
+      <stop offset="0.474" stop-color="#e7ffff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="51.5" y1="72" x2="51.5" y2="35" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="51.5" y1="66" x2="51.5" y2="41" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" y1="125" y2="116" xlink:href="#linear-gradient"/>
+  </defs>
+  <image id="图层_1" data-name="图层 1" class="cls-1" x="16" y="19" width="135" height="129" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACBCAYAAADqvqkXAAACz0lEQVR4nO3Z0U3bUBiG4Z+IARiBEbIBGSEbABNQJoBOQDeATgAbQO+4a3vLTekG3YAq0kGKEB+EgJ04PI9kEYkQG/vNyfHJ1tXdbS1oWlXjqtpb9A94s/uq+l1VV+3xSm2/svOdqvpSVUftMf04q6qbqvrafq7E6IWdHlTVn6o6EcZKTKrqum0rOf8pjvO2iWL1Ju1NOu77SJ6L47yNGqyPnTaC9BrI0zjOhLG2dvr+iJmPY9Imn6x3IJd97Ww+jrO+dsq7TNqyQuce45iuYsLD0k76jGPfdRqUcR9v5vmRg2Hp/JqN2mcYw9P51xgjC10kIxPRwep8xH/puxU+OXEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxLH5TqvqYYntVBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkjuH61fWRb/exEzoxXvBFL6rqZokDuJ/F8c+1G6zd2UV85eDvF3jOs0ZLVsV6mHZ5FI9zjisXe5D2uzzoxzi+b+a523izecekq39yfuQwMR2m86ra6eLI529ljzf4BG6y3RbIh5uPYzYx/fbZz/RATbsYQZ4ugh23+2KG56Cqrj9yDvLcCumhQAZr3AK5/ojb3LR8ftg2C2TDNBs9Lqvqoap+tlgu3zqqbL/wu4t2F/Olqo66mhHTqdk88seyd6NbV3e3iz532oatPddzLc2WyP/OLZe/b+W7qv4DT05RiZYSxzIAAAAASUVORK5CYII="/>
+  <image id="色相_饱和度_1" data-name="色相/饱和度 1" class="cls-2" x="16" y="19" width="135" height="129" xlink:href="data:img/png;base64,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"/>
+  <rect id="圆角矩形_1" data-name="圆角矩形 1" class="cls-3" x="35" y="88" width="73" height="9" rx="4.5" ry="4.5"/>
+  <rect id="圆角矩形_1_拷贝_2" data-name="圆角矩形 1 拷贝 2" class="cls-4" x="33" y="35" width="37" height="37" rx="10.5" ry="10.5"/>
+  <rect id="圆角矩形_1_拷贝_3" data-name="圆角矩形 1 拷贝 3" class="cls-5" x="39" y="41" width="25" height="25" rx="6.5" ry="6.5"/>
+  <rect id="圆角矩形_1_拷贝" data-name="圆角矩形 1 拷贝" class="cls-6" x="35" y="116" width="73" height="9" rx="4.5" ry="4.5"/>
+</svg>

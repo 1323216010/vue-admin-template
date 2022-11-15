@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216.375" height="216.375" viewBox="0 0 216.375 216.375">
+  <g id="组_1" data-name="组 1" transform="translate(-138.313 -172.313)">
+    <g id="矩形_1" data-name="矩形 1" transform="translate(246.5 172.313) rotate(45)" fill="#fff" stroke="#000" stroke-width="15">
+      <rect width="153" height="153" stroke="none"/>
+      <rect x="7.5" y="7.5" width="138" height="138" fill="none"/>
+    </g>
+    <rect id="矩形_2" data-name="矩形 2" width="15" height="100" transform="translate(276.552 239.341) rotate(45)"/>
+    <rect id="矩形_3" data-name="矩形 3" width="15" height="100" transform="translate(205.841 249.948) rotate(-45)"/>
+  </g>
+</svg>

@@ -27,8 +27,10 @@
             <el-button  size="mini" type="text" @click="download(scope.row.name)">下载</el-button>
           </template>
 
-
         </el-table-column>
+
+        <el-table-column label="文件大小" prop="volume" />
+
       </el-table>
     </div>
 
