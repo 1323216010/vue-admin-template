@@ -13,3 +13,11 @@ export function queryByLimit(offset,limit) {
         method: 'get'
     })
 }
+
+export function queryAll(data) {
+    return request({
+        url: `/files/list`,
+        method: 'post',
+        data
+    })
+}

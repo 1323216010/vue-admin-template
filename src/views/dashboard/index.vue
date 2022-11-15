@@ -13,6 +13,8 @@
 
     <div style="flex: 1;">
       <el-table  :data="list" >
+
+
         <el-table-column label="文件名" prop="name">
 
           <template slot-scope="scope">
@@ -21,15 +23,17 @@
 
         </el-table-column>
         <el-table-column label="文件类型" prop="type" />
-        <el-table-column  label="操作" prop="type">
-          
-          <template slot-scope="scope">
-            <el-button  size="mini" type="text" @click="download(scope.row.name)">下载</el-button>
-          </template>
 
+        <el-table-column  label="操作" prop="type">
+        <template slot-scope="scope">
+            <el-button type="text" icon="el-icon-edit">修改</el-button>
+            <el-button type="text" icon="el-icon-download" @click="download(scope.row.name)">下载</el-button>
+            <el-button type="text" icon="el-icon-delete" @click="removeById(scope.row.id)">删除</el-button>
+        </template>
         </el-table-column>
 
         <el-table-column label="文件大小" prop="volume" />
+        <el-table-column label="上传时间" prop="createTime" />
 
       </el-table>
     </div>
