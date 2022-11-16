@@ -28,7 +28,7 @@
         <template slot-scope="scope">
             <el-button type="text" icon="el-icon-edit">修改</el-button>
             <el-button type="text" icon="el-icon-download" @click="download(scope.row.name)">下载</el-button>
-            <el-button type="text" icon="el-icon-delete" @click="removeById(scope.row.id)">删除</el-button>
+            <el-button type="text" icon="el-icon-delete" @click="deletByName(scope.row.name)">删除</el-button>
         </template>
         </el-table-column>
 

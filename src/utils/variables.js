@@ -9,7 +9,7 @@
 
   // const deleteFile = kkIp + '/deleteFile';
   const deleteFile = 'http://111.230.194.21:8333/admin/vod/file' + '/deleteFile';
-  
+
    // 暴露出这些属性
   export default {
     fileUpload,
