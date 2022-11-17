@@ -96,7 +96,7 @@ export default {
     return {
       emailLoginForm: {
         username: "1596232649@qq.com",
-        password: "566305",
+        password: "",
       },
       loading: false,
       passwordType: "",
